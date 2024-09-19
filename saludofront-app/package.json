@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.10",
+    "@apollo/client": "^3.11.8",
     "@apollo/react-hooks": "^4.0.0",
-    "bootstrap": "^5.2.3",
-    "graphql": "^16.6.0",
+    "bootstrap": "^5.3.3",
+    "graphql": "^16.9.0",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.2",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

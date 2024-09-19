@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
-import { ApolloClient, InMemoryCache, ApolloProvider, useLazyQuery, gql } from '@apollo/client';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import React, { useState } from "react";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  useLazyQuery,
+  gql,
+} from "@apollo/client";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: "http://localhost:4000/graphql",
   cache: new InMemoryCache(),
 });
 
 const HELLO_QUERY = gql`
   query Hello($message: String!) {
-    hello(message: $message)
+    helloIvan(message: $message)
   }
 `;
 
 function Hello() {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
   const [getGreeting, { loading, error, data }] = useLazyQuery(HELLO_QUERY);
 
   const handleSubmit = (e) => {
@@ -36,11 +42,11 @@ function Hello() {
             placeholder="Escribe tu mensaje"
           />
         </Form.Group>
-        <Button className='mt-2' variant="primary" type="submit">
+        <Button className="mt-2" variant="primary" type="submit">
           Enviar
         </Button>
       </Form>
-      {data && <h2 className='mt-3'>{data.hello}</h2>}
+      {data && <h2 className="mt-3">{data.helloIvan}</h2>}
     </div>
   );
 }
@@ -61,7 +67,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
