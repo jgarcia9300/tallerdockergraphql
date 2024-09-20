@@ -15,7 +15,7 @@ const client = new ApolloClient({
 
 const HELLO_QUERY = gql`
   query Hello($message: String!) {
-    helloIvan(message: $message)
+    hello(message: $message)
   }
 `;
 
@@ -46,7 +46,7 @@ function Hello() {
           Enviar
         </Button>
       </Form>
-      {data && <h2 className="mt-3">{data.helloIvan}</h2>}
+      {data && <h2 className="mt-3">{data.hello}</h2>}
     </div>
   );
 }
