@@ -21,6 +21,8 @@ const HELLO_QUERY = gql`
     helloSebastian(message: $message)
     helloLeandro(message: $message)
     helloAnaSofia(message: $message)
+    helloOtto(message: $message)
+
   }
 `;
 
@@ -57,6 +59,7 @@ function Hello() {
       {data && <h2 className="mt-3">{data.helloSebastian}</h2>}
       {data && <h2 className="mt-3">{data.helloLeandro}</h2>}
       {data && <h2 className="mt-3">{data.helloAnaSofia}</h2>}
+      {data && <h2 className="mt-3">{data.helloOtto}</h2>}
     </div>
   );
 }
