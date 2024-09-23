@@ -23,6 +23,7 @@ const HELLO_QUERY = gql`
     helloAnaSofia(message: $message)
     helloOtto(message: $message)
     helloVenus(message: $message)
+    helloEsteban(message: $message)
 
   }
 `;

@@ -13,6 +13,7 @@ const typeDefs = gql`
     helloAnaSofia(message: String!): String
     helloOtto(message: String!): String
     helloVenus(message: String!): String
+    helloEsteban(message: String!): String
   }
 `;
 
