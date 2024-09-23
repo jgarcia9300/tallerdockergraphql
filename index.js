@@ -43,6 +43,9 @@ const resolvers = {
     helloVenus: (_, { message }) => {
       return `¡Hola, ${message}! Un saludo por parte de Venus `;
     },
+    helloEsteban: (_, { message }) => {
+      return `¡Hola, ${message}! Un saludo por parte de Esteban `;
+    },
   },
 };
 
